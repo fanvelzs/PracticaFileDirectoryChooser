@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.desarrollo.practicafiledirectorychooser.RegistroEstudiantesController">
+    <VBox maxWidth="600" spacing="13">
+        <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
+
+        <Label text="Registro de estudiante"/>
+        <Separator/>
+        <Label text="Número CIF"/>
+        <TextField fx:id="cifField" promptText="Número CIF"/>
+        <Label text="Nombres"/>
+        <TextField fx:id="nombresField" promptText="Nombres del estudiante"/>
+        <Label text="Apellidos"/>
+        <TextField fx:id="apellidosField" promptText="Apellidos del estudiante"/>
+        <Label text="Carrera"/>
+        <TextField fx:id="carreraField" promptText="Carrera"/>
+        <Label text="Correo electrónico"/>
+        <TextField fx:id="correoField" promptText="correo@ejemplo.com"/>
+        <HBox spacing="10">
+            <Button defaultButton="true" onAction="#guardarEstudiante" text="Guardar estudiante"/>
+            <Button onAction="#limpiar" text="Limpiar"/>
+            <Button onAction="#volverMenu" text="Volver al menú"/>
+        </HBox>
+    </VBox>
+</StackPane>

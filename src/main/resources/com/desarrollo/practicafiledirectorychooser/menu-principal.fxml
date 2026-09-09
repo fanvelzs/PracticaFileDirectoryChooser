@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desarrollo.practicafiledirectorychooser.MenuPrincipalController">
+    <VBox alignment="CENTER" maxWidth="430" spacing="20">
+        <padding><Insets bottom="35" left="35" right="35" top="35" /></padding>
+        <Label text="Menú principal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Separator />
+        <Label text="Seleccione la opción que desea utilizar" />
+        <Button maxWidth="Infinity" onAction="#abrirRegistroProyectos" text="Registro de proyectos" />
+        <Button maxWidth="Infinity" onAction="#abrirRegistroEstudiantes" text="Registro de estudiantes" />
+    </VBox>
+</StackPane>

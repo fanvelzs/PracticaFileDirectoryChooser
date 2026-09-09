@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.desarrollo.practicafiledirectorychooser.RegistroProyectosController">
+    <VBox maxWidth="650" spacing="13">
+        <padding><Insets top="28" right="30" bottom="28" left="30"/></padding>
+
+        <Label text="Registro de proyecto"/>
+        <Separator/>
+        <Label text="Nombre del proyecto"/>
+        <TextField fx:id="nombreField" promptText="Nombre del proyecto"/>
+        <Label text="Responsable"/>
+        <TextField fx:id="responsableField" promptText="Nombre del responsable"/>
+        <Label text="Descripción"/>
+        <TextArea fx:id="descripcionArea" prefRowCount="2" promptText="Descripción breve del proyecto"/>
+        <Label text="Archivo de requerimientos"/>
+        <HBox spacing="10">
+            <TextField fx:id="archivoField" editable="false" HBox.hgrow="ALWAYS" promptText="Seleccione un archivo"/>
+            <Button onAction="#seleccionarArchivo" text="Seleccionar"/>
+        </HBox>
+        <Label text="Directorio del proyecto"/>
+        <HBox spacing="10">
+            <TextField fx:id="directorioField" editable="false" HBox.hgrow="ALWAYS" promptText="Seleccione un directorio"/>
+            <Button onAction="#seleccionarDirectorio" text="Seleccionar"/>
+        </HBox>
+        <HBox spacing="10">
+            <Button defaultButton="true" onAction="#guardarProyecto" text="Guardar proyecto"/>
+            <Button onAction="#limpiar" text="Limpiar"/>
+            <Button onAction="#volverMenu" text="Volver al menú"/>
+        </HBox>
+    </VBox>
+</StackPane>
